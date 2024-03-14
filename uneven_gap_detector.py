@@ -9,7 +9,7 @@ def contour_area(contour):
 
 
 # Load the image
-image_path = r"C:\Users\ankit\OneDrive\Desktop\Navigating-The-Unknown\output4\flow\frame000.png"
+image_path = r"C:\Users\shreyas\OneDrive\Desktop\Navigating-The-Unknown\output4\flow\frame000.png"
 image = cv2.imread(image_path)
 
 # If the image has an alpha channel, remove it
@@ -77,7 +77,7 @@ for contour in contours:
             print("The centroid of the largest contour detected is:", cX, ",", cY)
 
 # Save the image with the drawn contour and centroid
-output_path = r"C:\Users\ankit\OneDrive\Desktop\Navigating-The-Unknown\frame.png"
+output_path = r"C:\Users\shreyas\OneDrive\Desktop\Navigating-The-Unknown\frame.png"
 
 cv2.imwrite(output_path, image)
 print(f"Image saved at {output_path}")
